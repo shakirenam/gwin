@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Plastic Surgery</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="gallery.css"> 
+    <div id="logo_area">
+        <img src="Lux_plastic_surgery_logo.png" id="logo">
+    </div> <!--Changed this-->
+    
+    
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    /* Style the header section */
+    header {
+        background-color: silver; /* Gold background for the header */
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* Style the navigation menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 16px;
+        padding: 16px;
+        margin: auto;
+        max-width: 1200px;
+    }
+    .gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; /* Add a smooth transition for scaling */
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+ 
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Add new CSS for flip effect when clicked */
+    .gallery img.flipped {
+        transform: rotateY(180deg);
+        transition: transform 0.5s ease-in-out;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shoppingcart.html"><img src="shoppingcarticon.png" id="icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="gallery">
+    <figure>
+        <img src="botoxBefore.png" alt="Image 1" data-alt-src="botoxAfter.png">
+        <figcaption style="text-align: center;">Botox</figcaption>
+    </figure>
+    <figure>
+        <img src="botoxBefore2.png" alt="Image 1" data-alt-src="botoxAfter2.png">
+        <figcaption style="text-align: center;">Botox</figcaption>
+    </figure>
+    <figure>
+        <img src="botoxBefore3.png" alt="Image 1" data-alt-src="botoxAfter3.png">
+        <figcaption style="text-align: center;">Botox</figcaption>
+    </figure>
+    <figure>
+        <img src="botoxBefore4.png" alt="Image 1" data-alt-src="botoxAfter4.png">
+        <figcaption style="text-align: center;">Botox</figcaption>
+    </figure>
+
+    <figure>
+        <img src="fillerbefore1.jpeg" alt="Image 1" data-alt-src="fillerafter1.jpeg">
+        <figcaption style="text-align: center;">Filler</figcaption>
+    </figure>
+    <figure>
+        <img src="fillerbefore2.jpeg" alt="Image 1" data-alt-src="fillerafter2.jpeg">
+        <figcaption style="text-align: center;">Filler</figcaption>
+    </figure>
+    <figure>
+        <img src="fillerbefore3.png" alt="Image 1" data-alt-src="fillerafter3.png">
+        <figcaption style="text-align: center;">Filler</figcaption>
+    </figure>
+    <figure>
+        <img src="fillerbefore4.png" alt="Image 1" data-alt-src="fillerafter4.png">
+        <figcaption style="text-align: center;">Filler</figcaption>
+    </figure>
+    <figure>
+        <img src="coolsculptingbefore.jpeg" alt="Image 1" data-alt-src="coolsculptingafter.jpeg">
+        <figcaption style="text-align: center;">CoolSculpting</figcaption>
+    </figure>
+    <figure>
+        <img src="coolsculptingbefore2.jpeg" alt="Image 1" data-alt-src="coolsculptingafter2.jpeg">
+        <figcaption style="text-align: center;">CoolSculpting</figcaption>
+    </figure>
+    <figure>
+        <img src="coolsculptingbefore3.jpeg" alt="Image 1" data-alt-src="coolsculptingafter3.jpeg">
+        <figcaption style="text-align: center;">CoolSculpting</figcaption>
+    </figure>
+    <figure>
+        <img src="coolsculptingbefore4.jpeg" alt="Image 1" data-alt-src="coolsculptingafter4.jpeg">
+        <figcaption style="text-align: center;">CoolSculpting</figcaption>
+    </figure>
+   
+   
+   
+
+</div>
+<footer>
+    <p>&copy; 2023 Luxury Plastic Surgery</p>
+</footer>
+<script src="gallery.js"></script>
+
+</body>

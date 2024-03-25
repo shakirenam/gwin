@@ -1,0 +1,94 @@
+/* Apply smooth scrolling to the entire HTML document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enable smooth scrolling for the entire document */
+}
+
+header {
+    background-color: silver;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change link color on hover to gold */
+
+}
+
+/* Additional CSS styles for the gallery */
+
+/* Style the gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Style each image container (figure) in the gallery */
+.gallery figure {
+    border: 2px solid #fff; /* Add a white border around each image */
+    border-radius: 8px; /* Round the corners of the image container */
+    overflow: hidden; /* Clip the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition on hover */
+}
+
+/* Style images within the gallery */
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transform: scale(1); /* Reset the scale of the image */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition on hover */
+}
+
+/* Change styles on hover for images within the gallery */
+.gallery figure:hover {
+    border-color: #ffd700; /* Change border color to gold on hover */
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+}
+
+/* Add new CSS for flip effect when clicked */
+.gallery img.flipped {
+    transform: rotateY(180deg); /* Rotate the image 180 degrees on click */
+    transition: transform 0.5s ease-in-out; /* Add a smooth transition for the flip effect */
+}
+
+/* Footer */
+
+/* Style the footer with a gold background */
+footer {
+    background-color: #ffd700; /* Gold background for footer */
+    text-align: center;
+    padding: 10px 0;
+    color: #333; /* Dark gray text color */
+    font-size: 14px;
+}

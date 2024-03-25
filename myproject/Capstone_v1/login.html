@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in & Sign up Form</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <main>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form action="dashboard.html" autocomplete="off" class="sign-in-form" id="signInForm">
+            <div class="logo">
+              <img src="gwin.png" alt="gwlogo" />
+            </div>
+
+            <div class="heading">
+              <h2>Welcome Back</h2>
+              <h6>Not registered yet?</h6>
+              <a href="#" class="toggle">Sign up</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                  id="email"
+                />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                  id="password"
+                />
+                <label>Password</label>
+              </div>
+
+              <button type="button" class="sign-btn" onclick="validateSignIn()">Sign In</button>
+
+              <p class="text" id="signInError"></p>
+            </div>
+          </form>
+
+          <form action="subs.html" autocomplete="off" class="sign-up-form">
+            <div class="logo">
+              <img src="gwin.png" alt="gwlogo" />
+            </div>
+
+            <div class="heading">
+              <h6>Already have an account?</h6>
+              <a href="#" class="toggle">Sign in</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input
+                  type="text"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Name</label>
+              </div>
+
+              <div class="input-wrap">
+                <input
+                  type="email"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input
+                  type="password"
+                  minlength="4"
+                  class="input-field"
+                  autocomplete="off"
+                  required
+                />
+                <label>Password</label>
+              </div>
+
+              <button type="submit" class="sign-btn">Sign Up</button>
+
+              <p class="text">
+                By signing up, I agree to the
+                <a href="#">Terms of Services</a> and
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="images/flyer1.png" class="image img-1 show" alt="" />
+            <img src="images/event2.png" class="image img-2" alt="" />
+            <img src="images/event4.png" class="image img-3" alt="" />
+          </div>
+
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Mentor your peers</h2>
+                <h2>One Stop for all events in DC</h2>
+                <h2>Find the help you need</h2>
+              </div>
+            </div>
+
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+              <span data-value="2"></span>
+              <span data-value="3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="login.js"></script>
+  <script>
+    function validateSignIn() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var signInError = document.getElementById('signInError');
+
+      // Check if email field is empty
+      if (email.trim() === '') {
+        signInError.textContent = 'Please fill in your email.';
+        return;
+      }
+
+      // Check if email has valid domain
+      var validDomains = ['gwu.edu', 'gwmail.gwu.edu'];
+      var emailDomain = email.split('@')[1];
+      if (!validDomains.includes(emailDomain)) {
+        signInError.textContent = 'Please use a valid GW email address.';
+        return;
+      }
+
+      // Check if password field is empty
+      if (password.trim() === '') {
+        signInError.textContent = 'Please fill in your password.';
+        return;
+      }
+
+      // If all validations pass, submit the form
+      document.getElementById('signInForm').submit();
+    }
+  </script>
+</body>
+</html>

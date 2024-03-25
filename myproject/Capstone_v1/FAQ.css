@@ -1,0 +1,311 @@
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  display: flex;
+  margin: 0 auto; /* Center horizontally */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: left; /* Center vertically */
+  padding: 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #033c5a;
+  padding: 10px;
+  font-family: 'Helvetica Neu', sans-serif;
+
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.card {
+  flex: 1;
+  background-color: #dde6f9;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card h2 {
+  margin-top: 0;
+}
+.footer {
+  background-color: white;
+  color: #033c5a;
+  text-align: center;
+  padding: 0px 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+ video {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    #home {
+    position: relative;
+    text-align: center;
+    padding: 0px 0;
+    color: #000000; 
+}
+
+.progress-bar {
+  height: 10px;
+  width: 100%; /* Adjust as needed */
+  background-color: #ddd;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.in-progress .progress-bar {
+  background-color: orange; /* Progress bar color for "In Progress" status */
+}
+
+.completed .progress-bar {
+  background-color: green; /* Progress bar color for "Completed" status */
+}
+
+.cancelled .progress-bar {
+  background-color: red; /* Progress bar color for "Cancelled" status */
+}
+
+/* Styles for chat box */
+.chat-container {
+  position: fixed;
+  bottom: 80px; /* Adjust this value to leave space for the footer */
+  right: 20px;
+  width: 300px;
+}
+
+.chat-box {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slide-in-bottom 0.5s ease-out;
+  background-color: #dde6f9; 
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+/* Styles for input and button */
+#user-message {
+  width: calc(100% - 100px);
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+position: relative;}
+
+button:hover {
+  background-color: #0056b3;}
+
+/* Animation */
+@keyframes slide-in-bottom {
+  from {transform: translateY(100%);}
+  to {transform: translateY(0);}}
+
+  .logo {
+  width: 100px; /* Set width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between logo and text */
+}
+.menu-bar {
+  background-color: #00578a;
+  color: #dde6f9;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust alignment */
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu-bar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Gibson-Book", Helvetica, Arial, sans-serif;
+}
+
+.menu-bar ul li a:hover {
+  text-decoration: underline;
+}
+
+.right-menu { /* New */
+  display: flex;
+  align-items: center;
+}
+
+.right-menu li {
+  margin-left: 20px; /* Adjust spacing between items */
+}
+
+#createAccountBtn {
+  /* Customize size */
+  font-size: 12px;
+  padding: 10px 10px;
+  
+  /* Customize color */
+background-color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+  color: white;
+  
+  /* Customize height and width */
+  height: 30px;
+  width: 100px;
+  
+  /* Other styles */
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect */
+#createAccountBtn:hover {
+  background-color: #c3c6db;
+}
+
+#loginBtn {
+  /* Customize size */
+  font-size: 12px;
+  padding: 10px 10px;
+  
+  /* Customize color */
+background-color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+  color: white;
+  
+  /* Customize height and width */
+  height: 30px;
+  width: 100px;
+  
+  /* Other styles */
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect */
+#loginBtn:hover {
+  background-color: #c3c6db; /* Darker blue color on hover */
+}
+
+.menu-btn {
+  margin-right: 10px; /* Adjust this value to change the space between buttons */
+}
+.subheader {
+  margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 20vh; /* Optional: Adjust the height as needed */
+}
+
+
+
+/* Additional CSS styles for the gallery */
+
+/* Style the gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/* Style each image container (figure) in the gallery */
+.gallery figure {
+    border: 2px solid #fff; /* Add a white border around each image */
+    border-radius: 8px; /* Round the corners of the image container */
+    overflow: hidden; /* Clip the rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition on hover */
+}
+
+/* Style images within the gallery */
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transform: scale(1); /* Reset the scale of the image */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition on hover */
+}
+
+/* Change styles on hover for images within the gallery */
+.gallery figure:hover {
+    border-color: #ffd700; /* Change border color to gold on hover */
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+}
+
+/* Add new CSS for flip effect when clicked */
+.gallery img.flipped {
+    transform: rotateY(180deg); /* Rotate the image 180 degrees on click */
+    transition: transform 0.5s ease-in-out; /* Add a smooth transition for the flip effect */
+}
+
+.subheader {
+  margin-top: 0px;
+    background-color: rgba(255, 255, 255, 0.5); /* White color with 50% opacity */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 20vh; /* Optional: Adjust the height as needed */
+}
+
+  /* CSS for FAQ section */
+
+.question h3 {
+  margin-bottom: 5px;
+  margin-left: 40px;
+  color: #333; /* Question text color */
+}
+
+.answer {
+  margin-left: 40px;
+  font-style: italic;
+  color: #666; /* Answer text color */
+}
