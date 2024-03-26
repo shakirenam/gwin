@@ -6,3 +6,8 @@ Sprint Content - User Stories, Use Case, Product backlog, Sprint Backlog, Review
 Clear Concepts : MVC (view YouTube Videos)
 
 -------Due : Wed 03/37/2024------------------------------------------------------------------------
+
+
+
+System Features:
+Search feature on Homepage, Signup/Login, Update service request, tutoring request, Update password in My Profile
