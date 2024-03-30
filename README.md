@@ -11,3 +11,5 @@ Clear Concepts : MVC (view YouTube Videos)
 
 System Features:
 Search feature on Homepage, Signup/Login, Update service request, tutoring request, Update password in My Profile
+
+IN THE SIGNUP SECTION ADD, GWID SECTION, In the enter password section make sure you take a min of 6 characters and a couple of symbols, (RE-ENTER THE PASSWORD, PHONE NUMBER (9 NUMBERS) 
